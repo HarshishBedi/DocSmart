@@ -53,6 +53,7 @@ Contributions are welcome! If you have suggestions, improvements, or bug fixes, 
 This project is licensed under the MIT License.
 
 ## Acknowledgements
-	•	Built with Streamlit
-	•	Powered by LangChain and Ollama
-	•	Thanks to the contributors and the open-source community for their support.
+
+- Built with Streamlit
+- Powered by LangChain and Ollama
+- Thanks to the contributors and the open-source community for their support.
