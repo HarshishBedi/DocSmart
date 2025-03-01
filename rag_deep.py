@@ -113,7 +113,7 @@ def generate_answer(user_query, context_documents):
 
 
 st.title("DocSmart 📑🧠")
-st.markdown("---")
+st.markdown("Rag Agent for document analysis, on Deep-seek-R1:1.5b and OLlama")
 st.markdown("by Harshish Singh Bedi")
 
 # File Upload Section
