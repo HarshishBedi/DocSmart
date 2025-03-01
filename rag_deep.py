@@ -112,9 +112,10 @@ def generate_answer(user_query, context_documents):
 # UI Configuration
 
 
-st.title("📘 DocuMind AI")
-st.markdown("### Your Intelligent Document Assistant")
-st.markdown("---")
+st.title("DocSmart 📄🧠")
+st.subheader("by Harshish Bedi 🚀", divider=True, anchor="https://github.com/HarshishBedi")
+# st.markdown("### Your Intelligent Document Assistant")
+# st.markdown("---")
 
 # File Upload Section
 uploaded_pdf = st.file_uploader(
