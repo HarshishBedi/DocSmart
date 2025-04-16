@@ -5,6 +5,7 @@ from langchain_core.vectorstores import InMemoryVectorStore
 from langchain_ollama import OllamaEmbeddings
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_ollama.llms import OllamaLLM
+import os
 
 st.markdown("""
     <style>
@@ -80,6 +81,8 @@ LANGUAGE_MODEL = OllamaLLM(model="deepseek-r1:1.5b")
 
 def save_uploaded_file(uploaded_file):
     file_path = PDF_STORAGE_PATH + uploaded_file.name
+    if not os.path.exists(PDF_STORAGE_PATH):
+        os.makedirs(PDF_STORAGE_PATH)
     with open(file_path, "wb") as file:
         file.write(uploaded_file.getbuffer())
     return file_path
